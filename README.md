@@ -34,7 +34,11 @@ WHERE m.name contains 'Articulation'
 OR  n.name contains 'Articulation' 
 OR  m.name contains 'Controller' 
 OR  n.name contains 'Controller'  
-MATCH (m)-[r]->(n)  
+MATCH (m)-[r*]->(n)  
 Return m,r,n
 ```
+and you will see
 
+
+
+<img width="1177" alt="111" src="https://github.com/jaswu51/Python_Classes_Parser/assets/91216581/2252e056-496b-4920-9adc-1d74c36b481c">
